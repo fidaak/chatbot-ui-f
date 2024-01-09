@@ -867,6 +867,7 @@ export interface Database {
           openai_api_key: string | null
           openai_organization_id: string | null
           perplexity_api_key: string | null
+          deepinfra_api_key: string | null
           profile_context: string
           updated_at: string | null
           use_azure_openai: boolean
@@ -892,6 +893,7 @@ export interface Database {
           openai_api_key?: string | null
           openai_organization_id?: string | null
           perplexity_api_key?: string | null
+          deepinfra_api_key?: string | null
           profile_context: string
           updated_at?: string | null
           use_azure_openai: boolean
@@ -917,6 +919,7 @@ export interface Database {
           openai_api_key?: string | null
           openai_organization_id?: string | null
           perplexity_api_key?: string | null
+          deepinfra_api_key?: string | null
           profile_context?: string
           updated_at?: string | null
           use_azure_openai?: boolean

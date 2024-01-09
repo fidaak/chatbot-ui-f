@@ -95,6 +95,9 @@ export const ProfileSettings: FC<ProfileSettingsProps> = ({}) => {
   const [perplexityAPIKey, setPerplexityAPIKey] = useState(
     profile?.perplexity_api_key || ""
   )
+  const [deepinfraAPIKey, setDeepInfraAPIKey] = useState(
+    profile?.deepinfra_api_key || ""
+  )
 
   const handleSignOut = async () => {
     await supabase.auth.signOut()
@@ -476,6 +479,17 @@ export const ProfileSettings: FC<ProfileSettingsProps> = ({}) => {
                   type="password"
                   value={perplexityAPIKey}
                   onChange={e => setPerplexityAPIKey(e.target.value)}
+                />
+              </div>
+
+              <div className="space-y-1">
+                <Label>Deep Infra API Key</Label>
+
+                <Input
+                  placeholder="Deep Infra API Key"
+                  type="password"
+                  value={deepinfraAPIKey}
+                  onChange={e => setDeepInfraAPIKey(e.target.value)}
                 />
               </div>
             </TabsContent>

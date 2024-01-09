@@ -6,6 +6,7 @@ export type LLMID =
   | AnthropicLLMID
   | MistralLLMID
   | PerplexityLLMID
+  | DeepInfraLLMID
 
 // OpenAI Models (UPDATED 12/18/23)
 export type OpenAILLMID =
@@ -33,6 +34,9 @@ export type MistralLLMID =
 export type PerplexityLLMID =
   | "pplx-7b-online" // Perplexity Online 7B
   | "pplx-70b-online" // Perplexity Online 70B
+
+// Deep Infra Models
+export type DeepInfraLLMID = "cognitivecomputations/dolphin-2.6-mixtral-8x7b"
 
 export interface LLM {
   modelId: LLMID

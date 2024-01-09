@@ -110,6 +110,18 @@ export const ModelIcon: FC<ModelIconProps> = ({
           height={height}
         />
       )
+    case "cognitivecomputations/dolphin-2.6-mixtral-8x7b":
+      return (
+        <GoogleSVG
+          className={cn(
+            "rounded-sm bg-[#fff] p-1 text-black",
+            props.className,
+            theme === "dark" ? "bg-white" : "border-[1px] border-black"
+          )}
+          width={width}
+          height={height}
+        />
+      )
     default:
       if (!modelId) {
         return <IconSparkles size={width} />
